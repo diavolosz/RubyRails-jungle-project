@@ -7,6 +7,13 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
+  get '/login' => 'sessions#index'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get '/signup' => 'user#index'
+  post '/user' => 'user#create'
+
   resources :testpage
 
   resource :cart, only: [:show] do
