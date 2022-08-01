@@ -45,7 +45,7 @@
       </ul>
       <ul class="navbar-nav">
        <% if current_user %>
-        <li><%= link_to "Current User: #{current_user.name}" ,'/', class: "nav-link"%></li>
+        <li><%= link_to "Current User: #{current_user.first_name}" ,'/', class: "nav-link"%></li>
         <li><%= link_to "Logout", '/logout', class: "nav-link" %></li>
         <% else %>
         <li><%= link_to 'Login', '/login' , class: "nav-link" %></li>

@@ -14,13 +14,6 @@ RSpec.describe Product, type: :model do
     end
     
     it 'should make a product' do
-      @product = Product.new( 
-        name: "flower",
-        description: "red colored flower",
-        quantity: 12,
-        price: 103,
-        category: Category.new( name: "flower plants")
-      )
       expect(@product).to be_truthy
     end
 
