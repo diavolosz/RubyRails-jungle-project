@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+  before_action :authorize, :only => [:show]
 
   def show
     @cart_empty = cart.empty?
