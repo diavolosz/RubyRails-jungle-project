@@ -46,10 +46,10 @@
       <ul class="navbar-nav">
        <% if current_user %>
         <li><%= link_to "Current User: #{current_user.first_name}" ,'/', class: "nav-link"%></li>
-        <li><%= link_to "Logout", '/logout', class: "nav-link" %></li>
+        <li><%= link_to "Log out", '/logout', class: "nav-link" %></li>
         <% else %>
-        <li><%= link_to 'Login', '/login' , class: "nav-link" %></li>
-        <li><%= link_to 'Signup', '/signup' , class: "nav-link" %></li>
+        <li><%= link_to 'Log in', '/login' , class: "nav-link" %></li>
+        <li><%= link_to 'Sign Up', '/signup' , class: "nav-link" %></li>
         <% end %>
 
         <li class="nav-item dropdown">
